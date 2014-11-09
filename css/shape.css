@@ -1,0 +1,21 @@
+.shape_rotate_45{
+	margin-left: 400px;
+	margin-top: 400px;
+	/*border: 1px solid #000000;*/
+	/* Transform */
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	overflow: hidden;
+}
+.shape_rotate_315{
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+}
+.a{
+	width:100px;
+	height:100px;
+}
