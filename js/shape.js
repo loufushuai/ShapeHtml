@@ -11,7 +11,7 @@ $('document').ready(function() {
 	$(".shape_side_six").each(function(){
 		var six_width = $(this).width();
 		var six_height = $(this).height();
-		$(this).wrap("<div class=\"shape_rotate_45\" style=\"width:"+four_width+"px;height:"+four_height+"px;\"><div class=\"shape_rotate_315\"  style=\"width:"+four_width+"px;height:"+four_height+"px;\"></div>");
+		$(this).wrap("<div class=\"shape_rotate_45\" style=\"width:"+six_width+"px;height:"+six_height+"px;	overflow:hidden;\"><div class=\"shape_rotate_315\"  style=\"width:"+six_width+"px;height:"+six_height+"px;\"></div>");
 
 	});
 	$(".shape_side_four").each(function(){
