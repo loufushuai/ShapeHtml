@@ -6,7 +6,6 @@
 	-webkit-transform: rotate(45deg);
 	-moz-transform: rotate(45deg);
 	-o-transform: rotate(45deg);
-	overflow: hidden;
 }
 .shape_rotate_315{
 	transform: rotate(-45deg);
