@@ -1,6 +1,6 @@
 $('document').ready(function() {
 	$(".shape_circle").each(function(){
-		if (this.height == this.width) {
+		if ($(this).height() == $(this).width()) {
 			$(this).css("border-radius",this.height/2+"px");
 		}
 		else{
@@ -8,17 +8,29 @@ $('document').ready(function() {
 			$(this).css("border-radius",this.height/2+"px");
 		}
 	});
+	$(".shape_oval").each(function(){
+		var oval_radius = Math.max($(this).width(),$(this).height());
+		console.log(oval_radius);
+		if($(this).height() < $(this).width()){
+			$(this).css("border-radius",oval_radius+"px/"+oval_radius/($(this).width()/$(this).height())+"px");
+		}
+		else{
+			$(this).css("border-radius",oval_radius/($(this).height()/$(this).width())+"px/"+oval_radius+"px");
+		}
+
+	});
 	$(".shape_side_six").each(function(){
 		var six_width = $(this).width();
 		var six_height = $(this).height();
-		$(this).wrap("<div class=\"shape_rotate_45\" style=\"width:"+six_width+"px;height:"+six_height+"px;	overflow:hidden;\"><div class=\"shape_rotate_315\"  style=\"width:"+six_width+"px;height:"+six_height+"px;\"></div></div>");
+		$(this).wrap("<div class=\"shape_rotate_45 fl\" style=\"width:"+six_width+"px;height:"+six_height+"px;	overflow:hidden;\"><div class=\"shape_rotate_315\"  style=\"width:"+six_width+"px;height:"+six_height+"px;\"></div></div>");
 
 	});
 	$(".shape_side_four").each(function(){
 		var four_width = $(this).width();
 		var four_height = $(this).height();
+		var four_diagonal = Math.sqrt(2);
 		$(this).wrap("<div class=\"shape_rotate_45\" style=\"width:"+four_width+"px;height:"+four_height+"px;overflow:hidden;\"><div class=\"shape_rotate_315\" style=\"width:"+four_width+"px;height:"+four_height+"px;\"></div>");
-		$(this).css("transform","scale(1.4)");
+		$(this).css("transform","scale("+four_diagonal+")");
 	});
 
 	

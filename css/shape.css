@@ -1,6 +1,6 @@
 .shape_rotate_45{
-	margin-left: 500px;
-	border: 1px solid #000000;
+	margin-left: 50px;
+/*	border: 1px solid #000000;*/
 	/* Transform */
 	transform: rotate(45deg);
 	-webkit-transform: rotate(45deg);
@@ -13,7 +13,11 @@
 	-moz-transform: rotate(-45deg);
 	-o-transform: rotate(-45deg);
 }
+
 .test{
 	width:100px;
 	height:100px;
+}
+.fl{
+	float: left;
 }
