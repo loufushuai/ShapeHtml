@@ -11,18 +11,14 @@ $('document').ready(function() {
 	$(".shape_side_six").each(function(){
 		var six_width = $(this).width();
 		var six_height = $(this).height();
-		$(this).wrap("<div class=\"shape_rotate_45\" style=\"width:"+six_width+"px;height:"+six_height+"px;	overflow:hidden;\"><div class=\"shape_rotate_315\"  style=\"width:"+six_width+"px;height:"+six_height+"px;\"></div>");
+		$(this).wrap("<div class=\"shape_rotate_45\" style=\"width:"+six_width+"px;height:"+six_height+"px;	overflow:hidden;\"><div class=\"shape_rotate_315\"  style=\"width:"+six_width+"px;height:"+six_height+"px;\"></div></div>");
 
 	});
 	$(".shape_side_four").each(function(){
 		var four_width = $(this).width();
 		var four_height = $(this).height();
-		// $(this).width(four_width/1.5);
-		// $(this).height(four_height/1.5);
-		// $(this).css("margin-left",four_width/5);
-		// $(this).css("margin-top",four_width/5);
-		$(this).wrap("<div class=\"shape_rotate_45\" style=\"width:"+four_width+"px;height:"+four_height+"px;\"><div class=\"shape_rotate_315\"  style=\"width:"+four_width+"px;height:"+four_height+"px;\"></div>");
-
+		$(this).wrap("<div class=\"shape_rotate_45\" style=\"width:"+four_width+"px;height:"+four_height+"px;overflow:hidden;\"><div class=\"shape_rotate_315\" style=\"width:"+four_width+"px;height:"+four_height+"px;\"></div>");
+		$(this).css("transform","scale(1.4)");
 	});
 
 	
