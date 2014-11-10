@@ -2,7 +2,7 @@
 摊手- -<br/>
 技术渣<br/>
 用于div,image图形化,省去切图,直接添加class属性即可<br/>好像也没多大用处OTZ<br/>
-现有圆形,四边形,六边形,图像标签添加css<br/>
+现有圆形,椭圆,四边形,六边形,图像标签添加css<br/>
 <h2>Quick Start</h2>
 head头部添加jquery,shape.css,shape.js<br/>
 ```html
@@ -12,8 +12,10 @@ head头部添加jquery,shape.css,shape.js<br/>
 ```
 ```html
 <img class="shape_circle" src="img/shape_circle/jpg">
+<img class="shape_oval" src="img/shape_circle/jpg"/>
 <img class="shape_side_four" src="img/shape_circle/jpg">
 <img class="shape_side_six" src="img/shape_circle/jpg">
+
 ```
 <img src="image/a.jpg">
 <img src="image/a_6.jpg">
