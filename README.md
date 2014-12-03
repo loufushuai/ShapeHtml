@@ -17,14 +17,15 @@ head头部添加jquery,shape.css,shape.js<br/>
 <img class="shape_side_six" src="img/shape_circle/jpg">
 
 ```
-<img src="image/a.jpg">->
+<img src="image/a.jpg">
+<img src="image/a_4.jpg">
 <img src="image/a_6.jpg">
 <img src="image/a_circle.jpg">
 <br/>
-<img src="image/c_1.jpg">->
+<img src="image/c_1.jpg">
 <img src="image/c_oval_1.jpg">
 <br/>
-<img src="image/c_2.jpg">->
+<img src="image/c_2.jpg">
 <img src="image/c_oval_2.jpg">
 <h2>
 	<a aria-hidden="true" href="#license" class="anchor" id="user-content-license"><span class="octicon octicon-link"></span></a>License
